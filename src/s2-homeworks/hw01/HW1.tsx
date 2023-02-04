@@ -4,6 +4,7 @@ import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
+import Avatar2009 from './Avatar2009.jpg'
 
 /*
 * 1 - описать тип MessageType
@@ -14,36 +15,50 @@ import avatar from './avatar.png'
 * */
 
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export type MessageType = {
+    id: number,
+    user: userType,
+    message: messageType,
+
+}
+type userType = {
+    avatar: string,
+    name: string
+}
+
+type messageType = {
+    text: string,
+    time: string,
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        avatar: Avatar2009, // можно менять
+        name: 'Kosty',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: `Hello, she didn't do anything and rested all day, how are you?`, // можно менять
+        time: '09.01', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Ivan', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hello, how are you, what did you do yesterday?', // можно менять
+        time: '9.00', // можно менять
     },
 }
 
 const HW1 = () => {
     return (
         <div id={'hw1'}>
-            <div className={s2.hwTitle}>Homework #1</div>
+            <div className={s2.hwTitle}>Hometask №1</div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
