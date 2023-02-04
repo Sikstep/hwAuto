@@ -8,6 +8,8 @@
 .friendImageAndText {
     display: flex;
     justify-content: flex-start;
+    align-items: flex-end;
+    gap: 12px;
 
 }
 
@@ -18,24 +20,34 @@
 
 .friendText {
     background-color: #F5F7FB;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 0;
+    position: relative;
+    padding-right: 13px;
 }
 
 .friendText:after {
-
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 13px 13px;
+    border-color: transparent transparent #F5F7FB transparent;
 }
 
 .friendName {
     font-size: 18px;
-    padding-left: 27px;
+    padding-left: 13px;
     padding-top: 8px;
+    margin-bottom: 4px;
 }
 
 .friendMessageText {
     font-size: 16px;
     font-weight: 400;
-    padding-left: 27px;
-    padding-right: 13px;
+    padding-left: 13px;
     padding-bottom: 8px;
 
 }

@@ -22,7 +22,7 @@
     border-radius: 20px;
     background-color: #0066CC;
     color: #FFFFFF;
-    border-color: #0066cc;
+    border: 1px solid #0066CC;
 }
 
 .button:hover {
