@@ -1,18 +1,34 @@
 .sendForm {
-
+    display: grid;
+    grid-template-areas: 'text but';
+    grid-template-rows: 40px;
+    grid-template-columns: auto 120px;
+    grid-gap: 44px;
 }
 
 .textarea {
-
+    grid-area: text;
+    padding-left: 24px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color:#F5F7FB;
+    resize: none;
+    overflow: hidden;
 }
 
 .button {
-
+    grid-area: but;
+    border-radius: 20px;
+    background-color: #0066CC;
+    color: #FFFFFF;
+    border-color: #0066cc;
 }
 
 .button:hover {
 
 }
+
 .button:active {
 
 }
