@@ -2,6 +2,8 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .error {
