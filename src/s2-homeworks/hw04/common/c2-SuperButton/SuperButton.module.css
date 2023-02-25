@@ -13,16 +13,10 @@
     cursor: pointer;
 }
 
-.disabled {
-    color: #002e5c;
-    background: #998a00;
-    opacity: 0.5;
-}
-
 .secondary {
     color: #0066CC;
-    background: transparent;
-    border: 1px solid #0066CC;
+    background: white;
+    border: 1px solid #127eee;
     border-radius: 3px;
 }
 
@@ -60,4 +54,13 @@
 
 .button:disabled {
     cursor: default;
+}
+.disabled {
+    color: #002e5c;
+    background: #127eee;
+    opacity: 0.5;
+}
+
+.disabled:hover {
+    background: #127eee;
 }
