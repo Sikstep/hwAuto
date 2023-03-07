@@ -1,4 +1,6 @@
 .sidebar {
+    text-decoration: none;
+    color: black;
 }
 
 .sidebar.open {
@@ -8,6 +10,8 @@
 }
 
 .nav {
+    text-decoration: none;
+    color: black;
 }
 
 .nav a {
@@ -17,6 +21,8 @@
 }
 
 .nav a.active {
+    color: #00a3b2;
+    text-decoration: underline;
 }
 .close {
 }
