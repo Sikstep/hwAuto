@@ -11,8 +11,12 @@ function Clock() {
 
     const start = () => {
         stop()
-        const letStart = +setInterval(()=>setDate(new Date()), 1000)
-        setTimerId(letStart)
+        // const letStart = +setInterval(()=>setDate(new Date()), 1000)
+        setTimeout(function updateDate() {
+         setDate(new Date())
+            setTimerId(+setTimeout(updateDate, 1000))
+        })
+
 
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
